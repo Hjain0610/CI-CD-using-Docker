@@ -42,14 +42,14 @@ stages {
        //   }
        // }
      
-     // stage('Run Docker container on Jenkins Agent') {
+     stage('Run Docker container on Jenkins Agent') {
              
-         //   steps 
-		//	{
-            //    sh "docker run -d -p 8003:8080 nikhilnidhi/samplewebapp"
+          steps 
+			{
+               sh "docker run -d -p 8003:8080 nikhilnidhi/samplewebapp"
  
-         //   }
-      //  }
+          }
+      }
  //stage('Run Docker container on remote hosts') {
              
           //  steps {
